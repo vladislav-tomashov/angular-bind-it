@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  values: Array<number> = [];
+  
+  onAddGameNumber(options: { value: number }) {
+    console.log(options.value);
+    this.values.push(options.value);
+  }
 }
